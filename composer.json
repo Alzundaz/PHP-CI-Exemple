@@ -29,7 +29,7 @@
   },
   "scripts": {
     "tests": [
-      "phpunit",
+      "XDEBUG_MODE=coverage ./vendor/bin/phpunit",
       "phpcs"
     ]
   }
