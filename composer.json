@@ -29,7 +29,8 @@
   },
   "scripts": {
     "tests": [
-      "XDEBUG_MODE=coverage ./vendor/bin/phpunit",
+      "@putenv XDEBUG_MODE=coverage",
+      "phpunit",
       "phpcs"
     ]
   }
